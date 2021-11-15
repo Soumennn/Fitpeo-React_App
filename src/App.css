@@ -1,38 +1,331 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #d3eedbe1;
+    background-image: linear-gradient(315deg, #ccbe91 0%, #c9d5e794 74%);
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ?  NAVBAR STYLING ------------------------------- */
+
+.navbar-brand {
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-left: 3rem;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div#navbarSupportedContent {
+    /* display: flex; */
+    justify-content: end;
+    margin-right: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+button.btn.btn-outline-light {
+    margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ?  BANNER STYLING ------------------------------- */
+
+.carousel {
+    background-color: #263e3386;
+    position: relative;
+}
+
+.left-banner-content h2 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 100;
+    color: white;
+    font-weight: 300;
+}
+
+.left-banner-content span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.left-banner-content form {
+    position: absolute;
+    z-index: 100;
+    top: 55%;
+    left: 5%;
+}
+
+.carousel-item img{
+    width: fit-content;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0.7;
+
+}
+
+
+
+.right-banner-content .bannerHow {
+    position: absolute;
+    opacity: 0.7;
+    right: 3rem;
+    top: 15%;
+    font-weight: 400;
+    z-index: 100;
+    background-color: #e105056e;
+    border: none;
+    cursor: pointer;
+}
+
+/* ?  PARACHUTE VECTOR STYLING ------------------------------- */
+    
+.parachute {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    width: 10rem;
+    top: 45%;
+    opacity: 0.3;
+
+}
+
+/* ?  RESPONSIVENESS  ------------------------------- */
+
+@media screen and (max-width: 1200px) {
+
+    .parachute{
+        position: absolute;
+        z-index: 100;
+        right: 10px;
+        width: 6rem !important;
+        top: 70% ;
+        opacity: 0.3;
+    
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+    
+
+    .parachute{
+        position: absolute;
+        z-index: 100;
+        right: 10px;
+        width: 6rem !important;
+        top: 70% ;
+        opacity: 0.3;
+    
+    }
+
+    .right-banner-content .bannerHow {
+        position: absolute;
+        opacity: 0.7;
+        right: 8%;
+        top: 10%;
+        font-weight: 400;
+        z-index: 100;
+        background-color: #e105056e;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 567px) {
+
+    
+
+    .parachute{
+        /* position: absolute;
+        z-index: 100;
+        right: 10px;
+        width: 3rem;
+        top: 30% ;
+        opacity: 0.3; */
+        display: none;
+    
+    }
+
+    .right-banner-content .bannerHow {
+        position: absolute;
+        opacity: 0.7;
+        right: 8%;
+        top: 10%;
+        font-weight: 400;
+        z-index: 100;
+        background-color: #e105056e;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+/* ?  PACKAGE CARDS STYLING ------------------------------- */
+
+.card-container {
+    /* overflow-x: hidden; */
+    padding: 8rem 0;
+}
+
+.col-lg-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border:none;
+}
+
+.cardImg {
+    width: auto;
+    height: 200px;
+}
+
+.cardImg img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* ?  FOOTER STYLING ------------------------------- */
+
+.footer {
+    max-width: 100%;
+    height: 300px;
+    padding: 20px 0px;
+    background-color: #84a98c;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(189, 217, 227, 0.3) 0px 2px 4px 0px, rgba(242, 251, 255, 0.9) 0px 2px 16px 0px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-left: 30%;
+    
+}
+
+.footer-nav a {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #f8fbff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img{
+
+    width: 9rem;
+}
+
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:white;
+}
+
+@media screen and (max-width: 576px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+     .logo-container img{
+
+        width: 7rem;
+    }
+    
+    .footer-nav {
+        margin: 0;
+    }
+
+    .footer-nav a {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #f8fbff;
+    }
+
+    .credits p {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color:white;
+    }
+
+   
+
+}
+
+
+
+
+/*? SHOWCARD COMPONENT STYLING --------------------------*/
+
+div#showCard {
+    margin: auto;
+    padding: 30px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    width: 80% !important;
+}
+
+div#showCard .card-body {
+    margin: 20px 0;
+    background: lightsteelblue;
+    border-radius: 6px;
+}
+
+div#showCard h5.card-title {
+    margin: 10px 0;
+    color: #0b203e;
+    margin-bottom: 31px;
+}
+
+div#showCard ul.list-group.list-group-flush {
+    margin: 4rem 0;
+    /* background: lightgrey; */
+}
+
+div#showCard li.list-group-item {
+    margin: 10px 0;
+    background: #76ffa673;
+    border-radius: 10px;
+    border: none;
 }
